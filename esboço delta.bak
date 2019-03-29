@@ -1,0 +1,20 @@
+#lang racket
+(define a 1)
+(define b 2)
+(define c 3)
+(define (delta)
+  (- (* b b) (* 4 a c)))
+(define (valor_a)
+  (first (list a b c)))
+(define (valor_b)
+  (second (list a b c)))
+(define (valor_c)
+  (third (list a b c))) 
+
+
+(define (start a b c)
+  (set! a (valor_a))
+  (set! b (valor_b))
+  (set! c (valor_c)))
+  
+  
